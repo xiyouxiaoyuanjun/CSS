@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>520节日快乐</title>
+    <style>
+        body{
+	background-color: hotpink;
+}
+h1{
+	text-align: center;
+}
+img{
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	padding:10px;
+	transition: 2s;/* 动画效果的时间,如果存在浏览器哎兼容性问题,需要在属性前加对应的浏览器名称 */
+	z-index: 0;
+}
+.pic1{
+    width: 300px;
+    height: 200px;
+	position: absolute;/* 绝对定位 */
+	top:200px;
+	left: 200px;
+
+	/* -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(-20deg);
+}
+
+.pic2{
+    width: 300px;
+    height: 200px;
+	position: absolute;/* 绝对定位 */
+	top:200px;
+	right: 200px;
+	/* -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(20deg);
+}
+body{
+	background-color: antiquewhite;
+}
+.pic3{
+    width: 300px;
+    height: 200px;
+	position: absolute;/* 绝对定位 */
+	bottom:100px;
+	left: 400px;
+	/* -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(-5deg);
+}
+
+.pic4{
+    width: 300px;
+    height: 200px;
+	position: absolute;/* 绝对定位 */
+	top:100px;
+	right: 600px;
+	/* -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(-10deg);
+}
+.pic5{
+    width: 300px;
+    height: 200px;
+	position: absolute;/* 绝对定位 */
+	bottom:50px;
+	right: 300px;
+	/* -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(10deg);
+}
+
+
+img:hover{
+	/* -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg); *//* 如果存在浏览器兼容性问题时,需开启此代码 */
+	transform: rotate(0deg);
+	transform: scale(2);/* 图片的缩放效果 */
+	box-shadow: 10px 10px 15px gray;/* 第一个值表示左右阴影,正数为右,负数为左;第二个值上下阴影,上负下正;第三个参数为阴影的距离;第四个参数为阴影的颜色 */
+	z-index: 1;
+}
+    </style>
+</head>
+<body >
+    <img src="p1.jpg" class="pic1">
+    <img src="p0.jpg" class="pic2">
+    <img src="p3.jpg" class="pic3">
+    <img src="p4.jpg" class="pic4">
+    <img src="p0.jpg" class="pic5">
+
+</body>
+</html>
