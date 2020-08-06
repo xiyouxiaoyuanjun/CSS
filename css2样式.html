@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css第二课</title>
+    <style>
+        /* 这是子元素选择器 */
+        div>p{
+            color: chartreuse;
+        }
+        div>strong{
+            color: cyan;
+        }
+        p.red{
+            color: darkorchid;
+        }
+        /* 并集选择器,逗号理解为和的意思，通常用于集体声明，选择器里面的样式相同 */
+        p5,p4{
+            color: deeppink;
+        }
+        /* 交集选择器 */
+        p3.blue{
+            color: rgb(221, 12, 12);
+        }
+        div.beijing{
+            width: 500px;
+            height: 500px;
+            background-color: chartreuse;
+        }
+        div.beijing :hover{
+            background-color: crimson;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <strong>哦豁</strong>
+        <strong>哦豁</strong>
+        <strong>哦豁</strong>
+
+    </div>
+    <div>
+        <p>
+            <strong>哦豁</strong>
+            <strong>哦豁</strong>
+            <strong>哦豁</strong>
+      
+        </p>
+    </div>
+    <p class="red">哦豁</p>
+    <p class="red">哦豁</p>
+    <p3 class="blue">快乐</p3>
+    <p4 >哦豁</p4>
+    <p5 >哦豁</p5>
+    <p6 >哦豁</p6>
+    <div class="beijing">
+
+    </div>
+</body>
+</html>
